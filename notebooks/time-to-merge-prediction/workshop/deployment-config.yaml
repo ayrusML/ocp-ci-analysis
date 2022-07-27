@@ -1,9 +1,9 @@
 apiVersion: machinelearning.seldon.io/v1
 kind: SeldonDeployment
 metadata:
-  name: YOUR_USERNAME
+  name: ayrusml
 spec:
-  name: YOUR_USERNAME
+  name: ayrusml
   predictors:
   - componentSpecs:
     - spec:
@@ -44,7 +44,7 @@ spec:
                 key: AIOPS_TOOLS_WORKSHOP_BUCKET
                 name: s3buckets
           - name: S3_MODEL_KEY
-            value: 'CEPH_BUCKET_PREFIX/ORG/REPO/ttm-model'
+            value: 'ayrusml/operate-first/support/ttm-model'
 
     svcOrchSpec:
       resources:
